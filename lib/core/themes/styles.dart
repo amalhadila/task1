@@ -14,24 +14,14 @@ abstract  class Styles {
     fontWeight: FontWeight.w400,
   //  color: Colors.black,
   );
-    static TextStyle textStyle20_inter=   TextStyle (
-      fontFamily: 'FuturaPT',
-    fontSize: 20.sp,
-    fontWeight: FontWeight.w400,
-  //  color: Colors.black,
-  );
+   
   static TextStyle textStyle15=   TextStyle (
     fontFamily: 'FuturaPT',
     fontSize: 15.sp,
     fontWeight: FontWeight.w400,
   //  color: Colors.black,
   );
-  static TextStyle textStyle15_inter=   TextStyle (
-    fontFamily: 'FuturaPT',
-    fontSize: 15.sp,
-    fontWeight: FontWeight.w400,
-    color: Colors.white,
-  );
+ 
    static TextStyle textStyle24=   TextStyle(
     fontFamily: 'FuturaPT',
     fontSize:24.sp,
@@ -51,28 +41,10 @@ abstract  class Styles {
     fontWeight: FontWeight.w400,
     color:  Color(0xFF8E8E8E)
   );
-   static TextStyle textStyle16_inter=   TextStyle
-(
-  fontFamily: 'FuturaPT',
-    fontSize: 16.sp,
-    fontWeight: FontWeight.w400,
-    color:  Color(0xFF8E8E8E)
-  );
+  
 
-    static TextStyle textStyle18_inter=   TextStyle
-(
-  fontFamily: 'FuturaPT',
-    fontSize: 18.sp,
-    fontWeight: FontWeight.w400,
-    color:  Color(0xFFA6A6A6)
-  );
-   static TextStyle textStyle24_inter=   TextStyle
-(
-  fontFamily: 'FuturaPT',
-    fontSize: 24.sp,
-    fontWeight: FontWeight.w400,
-    color:  Colors.white
-  );
+  
+  
 
  static TextStyle textStyle16semibold= TextStyle
 (
@@ -103,12 +75,6 @@ abstract  class Styles {
     fontWeight: FontWeight.w400,
   //  color: Colors.black
   );
-  static TextStyle textStyle14_inter=   TextStyle
-(
-  fontFamily: 'FuturaPT',
-    fontSize: 14.sp,
-    fontWeight: FontWeight.w400,
- //   color: Colors.black
-  );
+ 
 
 }
