@@ -14,7 +14,7 @@ class ListViewItem extends StatelessWidget {
     return Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 5),
                   child: SizedBox(
-                    height: 300.h,
+                    height: 250.h,
                     child: Card(
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.only(topLeft: Radius.circular(90),topRight: Radius.circular(20),bottomLeft: Radius.circular(20),bottomRight: Radius.circular(90)),
@@ -92,14 +92,14 @@ class ListViewItem extends StatelessWidget {
                                   Row(
                                            children: [
                                              Container(
-                                                   padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 5).r,
+                                                   padding: const EdgeInsets.symmetric(horizontal: 3, vertical: 2).r,
                                                   decoration:BoxDecoration(
                                                 color: Colors.purple.withOpacity(0.5),
                                                 borderRadius: BorderRadius.only(topRight: Radius.circular(20),bottomLeft: Radius.circular(20)),
                                               ),
                                                   child: Text(
                                                     'Starting from \n100 AED',
-                                                    style:Styles.textStyle14.copyWith(color: Colors.white),
+                                                    style:Styles.textStyle13.copyWith(color: Colors.white),
                                                   ),
                                                 ),
                                                 SizedBox(width: 5.h),
@@ -133,61 +133,59 @@ class ListViewItem extends StatelessWidget {
                               ),
                             ),
                           ),
-                          Expanded(
-                            flex: 5,
-                            child: Stack(
-                              alignment: Alignment.bottomRight,
-                              children: [
-                                ClipRRect(
-                                  borderRadius: const BorderRadius.only(
-                                                         topRight: Radius.circular(20),bottomRight: Radius.circular(90),
-
-                                  ),
-                                  child: Expanded(
-                                    child: SizedBox(
-                                      width: double.infinity,
-                                      height: 300.h,
-                                      child: Image.network(
-                                      home_item.imageUrl ?? '', 
-                                                                     
-                                      fit: BoxFit.cover,
-                                      errorBuilder: (context, error, stackTrace) {
-                                        return  Icon(Icons.image_not_supported, size: 50, color: Colors.grey);
-                                      },
-                                                                    ),
-                                    ),
-                                  )
-                                ),
-                                Positioned(
-                                  top: 10,
-                                  right: 5,
-                                  child:Rating()),
-                                Positioned(
-                                  bottom: 15,
-                                  left: 5,
-                                  child: Container(
-                                    padding: EdgeInsets.all(2).r,
-                                    decoration:BoxDecoration(
-                                        color: Colors.white,
-                                        borderRadius: BorderRadius.circular(10),
-                                      ),
-                                    child: Container(
-                                      padding: const EdgeInsets.symmetric(horizontal: 3, vertical: 3).r,
-                                      decoration: BoxDecoration(
-                                        color: Colors.purple.withOpacity(.5),
-                                        borderRadius: BorderRadius.circular(10),
-                                      ),
-                                      child: Text(
-                                        'Buy and Get\n5%',
-                                        style:Styles.textStyle12.copyWith(color: Colors.white),
-                                        textAlign: TextAlign.center,
-                                      ),
-                                    ),
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
+                  Expanded(
+  flex: 4,
+  child: Stack(
+    alignment: Alignment.bottomRight,
+    children: [
+      ClipRRect(
+        borderRadius: const BorderRadius.only(
+          topRight: Radius.circular(20),
+          bottomRight: Radius.circular(90),
+        ),
+        child: SizedBox(
+          width: double.infinity,
+          height: 250.h,
+          child: Image.network(
+            home_item.imageUrl ?? '',
+            fit: BoxFit.cover,
+            errorBuilder: (context, error, stackTrace) {
+              return Icon(Icons.image_not_supported, size: 50, color: Colors.grey);
+            },
+          ),
+        ),
+      ),
+      Positioned(
+        top: 10,
+        right: 5,
+        child: Rating(), 
+         ),
+      Positioned(
+        bottom: 15,
+        left: 5,
+        child: Container(
+          padding: EdgeInsets.all(2).r,
+          decoration: BoxDecoration(
+            color: Colors.white,
+            borderRadius: BorderRadius.circular(10),
+          ),
+          child: Container(
+            padding: const EdgeInsets.symmetric(horizontal: 3, vertical: 3).r,
+            decoration: BoxDecoration(
+              color: Colors.purple.withOpacity(.5),
+              borderRadius: BorderRadius.circular(10),
+            ),
+            child: Text(
+              'Buy and Get\n5%',
+              style: Styles.textStyle12.copyWith(color: Colors.white),
+              textAlign: TextAlign.center,
+            ),
+          ),
+        ),
+      ),
+    ],
+  ),
+),
                         ],
                       ),
                     ),
