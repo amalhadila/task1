@@ -92,7 +92,7 @@ class ListViewItem extends StatelessWidget {
                                   Row(
                                            children: [
                                              Container(
-                                                   padding: const EdgeInsets.symmetric(horizontal: 3, vertical: 2).r,
+                                                   padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 4).r,
                                                   decoration:BoxDecoration(
                                                 color: Colors.purple.withOpacity(0.5),
                                                 borderRadius: BorderRadius.only(topRight: Radius.circular(20),bottomLeft: Radius.circular(20)),
